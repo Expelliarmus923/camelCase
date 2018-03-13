@@ -1,6 +1,7 @@
 # 下划线转大小写
 
 ```js
+import camelCaseConvert from 'camelCase';
 var obj = {
     a_v: 1,
     c_d_ddd: 2,
@@ -27,3 +28,7 @@ let targetObj = camelCaseConvert(Object.assign({}, obj));
     camelCaseConvert(obj);
     console.log(obj);
 ```
+
+## TOOD:
+1. 兼容Symbol，用Object.getOwnPropertySymbols，现有的for in 只会遍历自身的属性（高级浏览器）
+2. 编写测试用例
