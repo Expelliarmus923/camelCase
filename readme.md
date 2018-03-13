@@ -29,6 +29,6 @@ let targetObj = camelCaseConvert(Object.assign({}, obj));
     console.log(obj);
 ```
 
-## TOOD:
+## TODO:
 1. 兼容Symbol，用Object.getOwnPropertySymbols，现有的for in 只会遍历自身的属性（高级浏览器）
 2. 编写测试用例
